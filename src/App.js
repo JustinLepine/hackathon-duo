@@ -3,6 +3,7 @@ import tools from './utils/tools';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Nav from "./Components/Nav/Nav"
 import Home from "./pages/Home/Home"
+import Search from "./pages/Search/Search"
 
 
 function App() {  
@@ -22,6 +23,7 @@ function App() {
       <Nav />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/search" exact component={Search} />
       </Switch>
     </BrowserRouter>
   );
