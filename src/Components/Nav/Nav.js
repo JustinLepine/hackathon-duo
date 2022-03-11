@@ -8,7 +8,7 @@ function Nav() {
   return (
     <section className='nav'>
       <img className='nav__logo' src={Logo} alt='pic'/>
-      <input className='nav__search' placeholder='Search.'></input>
+      <input className='nav__search' placeholder='Search'></input>
       <div className='nav__watchlist'>
         <img className='nav__icon' src={WatchListIcon} alt='pic'/>
         <p className='nav__sub'>Watchlist</p>
