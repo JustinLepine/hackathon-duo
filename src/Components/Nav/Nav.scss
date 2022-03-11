@@ -1,0 +1,48 @@
+.nav {
+    height: 5rem;
+    background-color: #88BBD6;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        height: 4.5rem;
+    }
+
+    &__search {
+        height: 2rem;
+        width: 40%;
+        padding-left: 1rem;
+        margin-left: 2%;
+        border: none;
+        border-radius: 3px;
+    }
+
+    &__watchlist {
+        border-left: 1px #CDCDCD solid;
+        margin-left: 2rem;
+        display: flex;
+    }
+
+    &__icon {
+        margin-left: 1.2rem;
+        margin-top: 0.2rem;
+    }
+
+    &__sub {
+        margin-left: 0.3rem;
+        margin-right: 1.2rem;
+    }
+
+    &__signin-container {
+        border-left: 1px #CDCDCD solid;
+        // margin-left: 1rem;
+        display: flex;
+    }
+
+    &__signin {
+        margin-left: 0.3rem;
+        font-size: 1.1rem;
+    }
+}
