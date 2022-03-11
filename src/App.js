@@ -1,7 +1,8 @@
 import './App.css';
-import tools from './utils/tools'
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
+import tools from './utils/tools';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Nav from "./Components/Nav/Nav"
+import Home from "./pages/Home/Home"
 
 
 function App() {  
@@ -17,9 +18,12 @@ function App() {
   })
 
   return (
-    // <BrowserRouter>
+    <BrowserRouter>
       <Nav />
-    // </BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Home} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
