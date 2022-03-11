@@ -1,7 +1,9 @@
 import './App.css';
 import tools from './utils/tools'
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from './pages/Home/Home'
 import Nav from "./Components/Nav/Nav"
+import Search from "./pages/Search/Search"
 
 
 function App() {  
@@ -17,9 +19,13 @@ function App() {
   })
 
   return (
-    // <BrowserRouter>
+    <BrowserRouter>
       <Nav />
-    // </BrowserRouter>
+        <Switch>
+          <Route path= '/' exact component = {Home} /> 
+          <Route path= '/Search' component = {Search} />
+        </Switch> 
+    </BrowserRouter>
   );
 }
 
